@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme{
+     --color-dark:#1e253b
+}
+@supports selector(:has(*)) {
+     :root{
+          color-scheme: light ;
+     }
+     :root.dark{
+          color-scheme: dark ;
+     }
+}

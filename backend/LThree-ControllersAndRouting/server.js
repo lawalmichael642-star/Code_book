@@ -7,6 +7,7 @@ const ebookRoute = require("./routes/ebookRoute")
 const cartRoute = require("./routes/cartRoute")
 const orderRoute = require("./routes/orderRoute")
 const cors = require("cors")
+const corsOptions = require("./config/corsOption")
 
 dotenv.config();
 

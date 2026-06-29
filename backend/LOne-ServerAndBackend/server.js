@@ -31,10 +31,10 @@ app.get("/health", (req, res) => {
 
 try {
     const server = app.listen(PORT, () => {
-        const adress = server.address();
-        console.log(`you, we are live on port ${PORT}`);
-        console.log('Server address:', adress);
-        console.log(`Server is listning on http://localhost:${PORT}`);
+        const address = server.address();
+        console.log(`You are live on port ${PORT}`);
+        console.log('Server address:', address);
+        console.log(`Server is listening on http://localhost:${PORT}`);
 
         mongoose.connect(process.env.MONGO_URI)
             .then(() => console.log("connected to database"))

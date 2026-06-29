@@ -1,6 +1,4 @@
-const {default: mongoose} = require('mongoose');
-const userModel = require("./userModel");
-
+const mongoose = require('mongoose');
 
 const cartSchema = new mongoose.Schema({
     userId:{

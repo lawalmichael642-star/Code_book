@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const ebookSchema = new mongoose.Schema(
     {
         id: {
-            type: number,
+            type: Number,
             required: true
         },
         name: {
@@ -20,7 +20,7 @@ const ebookSchema = new mongoose.Schema(
             required: true,
         },
         price: {
-            type: number,
+            type: Number,
             required: true,
             min: 0,
         },
@@ -29,7 +29,7 @@ const ebookSchema = new mongoose.Schema(
             required: true,
         },
         rating: {
-            type: number,
+            type: Number,
             required: true,
             min: 0,
             max: 5

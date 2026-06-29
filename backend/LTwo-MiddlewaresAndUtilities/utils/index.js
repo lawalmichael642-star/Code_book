@@ -24,7 +24,7 @@ const generateUniqueId = async () => {
         newId = parseInt (latestEbook.id) +1;
     }
 
-    return newId.toString();
+    return newId;
 }
 
 module.exports = {

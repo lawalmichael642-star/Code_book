@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/createEbook", adminProtect, createEbook);
 router.get("/singleEbook/:id", getAnEbook);
-router.get("/allEbooks", getAllEbook);
+router.get("/getAllEbook", getAllEbook);
 router.put("/updateEbook/:id", adminProtect, updateEbook);
 
 module.exports = router;

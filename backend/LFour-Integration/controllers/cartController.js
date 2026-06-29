@@ -54,7 +54,7 @@ const removeFromCart = asyncHandler(async (req, res) => {
     }
 
     const existingCartIndex = cart.cartList.findIndex(
-        (item) => item.id === Number(id)
+        (item) => item.id === id
     );
 
     if (existingCartIndex === -1) {

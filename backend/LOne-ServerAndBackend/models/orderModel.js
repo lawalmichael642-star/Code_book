@@ -1,15 +1,15 @@
-const {default: mongoose} = require('mongoose');
+const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
 
     user: {
-        type:Object,
+        type: Object,
     },
     quantity: {
-        type: number,
+        type: Number,
     },
     amount_paid: {
-        type: number,
+        type: Number,
     },
     cartList: {
         type: Array,

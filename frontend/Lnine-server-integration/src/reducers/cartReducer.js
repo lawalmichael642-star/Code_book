@@ -41,6 +41,4 @@ const cartReducer = (state, action) => {
       throw new Error(`No case found for action type : ${type}`);
   }
 };
-
-export { cartReducer };
 export default cartReducer;
